@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0 auto;
+    font-family:  Roboto;
+    color:azure;  
+    box-sizing: border-box;
+}
+.header{
+    height:100vh;
+}
+.header_bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.wrapper{
+    max-width: 1420px;
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    
+       
+}
+.menu_list{
+    display: flex;
+    list-style: none;
+    align-items: center;   
+}
+.menu_list>li{
+    
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 30px;
+}
+.logo{
+    font-size: 35px;
+    cursor: pointer;
+    position: fixed;
+    right:250px;   
+}
+
+
+.matches_item_list{
+    position: absolute;
+    list-style: none;
+    top: 29px;
+    left:85px;
+    display: none;
+}
+
+
+
+li{  
+    text-align: center;  
+}
+
+.matches_item:hover .matches_item_list{
+    display: block;  
+}
+
+li:hover{
+    border-bottom: 2px solid rgb(41, 80, 139);
+    color: rgb(41, 80, 139);
+    font-weight: 600;
+    transition: 0.1s all linear;
+    
+    
+}
+.header_description{
+    position: relative;
+    top:300px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    max-width:600px;
+    padding: 20px;
+    
+    
+}
+.header_description>h1{
+    font-size: 60px;
+}
+.header_description>p{
+    font-size: 30px;
+}
+article{
+    height:100vh;
+    background-color:  rgba(0, 0, 0, 0.5);
+    display: flex;   
+}
+
+.biography{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.liverpool_img{
+    margin-right: 80px;
+}
+.liverpool{
+    max-width: 600px;      
+}
+.liverpool_biography{
+    max-width: 400px;
+    padding-left: 30px;
+}
+.liverpool_biography>h1{
+    font-size: 85px;
+    color: rgba(255,0 ,0 ,0.7 );
+    font-weight: 900;
+}
+.liverpool_biography>p{
+    text-align: justify;
+    font-size: 25px;
+}
+@media screen and (max-width:700px){
+    .logo{
+        right:5px
+    }
+    video{
+        right: 0;
+        bottom: 0;
+        
+    }
+    .header_description{
+        top:150px;
+        
+    }
+    .header_description>h1{
+        font-size: 40px;
+    }
+    .header_description>p{
+        font-size: 20px;
+    }
+
+    .menu_list{
+        display: none;
+    }
+    article{
+        height:fit-content;
+    }
+    .biography{
+        flex-direction: column-reverse;
+    }
+
+    .liverpool_img{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 90px;
+        
+    }
+    .liverpool_img>img{
+        width: 60vw;
+        margin-bottom:20px ;
+    }
+    .liverpool_biography{
+      
+    }
+    
+}
+@media  screen and (max-width:1200px) {
+    .logo{
+        right:50px;
+    }
+}
+
+
+
+
