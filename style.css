@@ -255,6 +255,16 @@ article{
         color: black;
         margin: 2.5rem 0;
     }
+    .menu_item_list>li{
+        color: black;
+    }
+    .menu_item_list>li:hover{
+        color: rgb(41, 80, 139);
+    }
+    #matches:hover{
+        border-bottom:none ;
+
+    }
     .hamburger{
         display: block;
         cursor: pointer;
