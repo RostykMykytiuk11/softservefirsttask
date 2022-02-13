@@ -36,6 +36,19 @@
     list-style: none;
     align-items: center;   
 }
+.hamburger{
+    display: none;
+    
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: azure;
+}
 .menu_list>li{
     
     cursor: pointer;
@@ -51,12 +64,13 @@
 }
 
 
-.matches_item_list{
+.menu_item_list{
     position: absolute;
     list-style: none;
     top: 29px;
     left:85px;
     display: none;
+    color:black;
 }
 
 
@@ -65,7 +79,7 @@ li{
     text-align: center;  
 }
 
-.matches_item:hover .matches_item_list{
+.menu_item:hover .menu_item_list{
     display: block;  
 }
 
@@ -98,20 +112,25 @@ article{
     display: flex;   
 }
 
-.biography{
+.liverpool{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .liverpool_img{
     margin-right: 80px;
+    
+}
+.liverpool_img>img{
+    width:600px;
+    height:600px;
 }
 .liverpool{
     max-width: 600px;      
 }
 .liverpool_biography{
     max-width: 400px;
-    padding-left: 30px;
+    
 }
 .liverpool_biography>h1{
     font-size: 85px;
@@ -122,11 +141,19 @@ article{
     text-align: justify;
     font-size: 25px;
 }
+footer{
+    background-color: rgb(141, 144, 146);
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width:700px)  {
     .menu_list{
         position: fixed;
-        left: -100%;
         top:5rem;
+        left: -100%;
         flex-direction: column;
         justify-content: center;
         background-color: #fff;
@@ -142,22 +169,24 @@ article{
         left:0;
     }
     .menu_item{
-        color: black;
-        
+        margin: 1rem 0;
     }
+    
     li:hover{
         border-bottom: 2px solid rgb(158, 34, 158);
         color: rgb(158, 34, 158);
-        font-weight: 600;
-        transition: 0.1s all linear;
-        
-        
+        transition: 0.1s all linear;       
     }
+
     #matches:hover{
         border-bottom: none;
     }
-    .menu-item-list{
-        position:static;
+    .menu_item_list{
+        position: static;
+       
+    }
+    .menu_item_list>li:hover{
+        color: rgb(158, 34, 158);
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
@@ -183,17 +212,10 @@ article{
         display: none;
         
     }
-    .menu_item_list{
-        position: static;
-    }
+    
     .menu_item_list>li{
         color: black;
     }
-    .menu_item_list>li:hover{
-        color: rgb(158, 34, 158);
-        
-    }
-
     .header_description{
         top:30vh
     }
@@ -252,8 +274,14 @@ article{
         
     }
     .menu_item{
+        margin: 1rem 0;
+    }
+    .menu_item_list{
+        position: static;
+    }
+    .menu_item{
         color: black;
-        margin: 2.5rem 0;
+        
     }
     .menu_item_list>li{
         color: black;
@@ -265,15 +293,13 @@ article{
         border-bottom:none ;
 
     }
+    
     .hamburger{
         display: block;
         cursor: pointer;
         position: fixed;
         top:4px;
         left:5px
-    }
-    .menu-item-list{
-        position:static;
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
@@ -307,6 +333,11 @@ article{
     
     
 }
+
+
+
+
+
 
 
 
