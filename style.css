@@ -6,6 +6,16 @@
     color:azure;  
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 2px solid rgb(41, 80, 139);
+    color: rgb(41, 80, 139);
+    font-weight: 600;
+    transition: 0.1s all linear;
+
+}
 .header{
     height:100vh;
 }
@@ -140,6 +150,46 @@ article{
     text-align: justify;
     font-size: 25px;
 }
+.fans{
+    height:100vh;
+    background-color:  burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.coment{
+    max-width: 500px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.coment_date{
+    border-bottom: 2px solid black;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
+.add_coment{
+    padding-top: 30px;
+    color:black;
+}
+.com{
+    width: 200px;
+    height:200px;
+}
+.add_btn{
+    color:black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+.add_btn:hover{
+    height:60px;
+    width:150px;
+    font-weight: 700;
+    transition: 0.1s all linear ;
+}
 footer{
     background-color: rgb(141, 144, 146);
     height:200px;
@@ -184,7 +234,7 @@ footer{
         position: static;
        
     }
-    .menu_item_list>li:hover{
+    .menu_item_list li:hover{
         color: rgb(158, 34, 158);
     }
     .hamburger.active .bar:nth-child(2) {
@@ -208,24 +258,27 @@ footer{
     }
     
     video{
-        display: none;
-        
-    }
-    
+        display: none;       
+    }   
     .menu_item_list>li{
         color: black;
     }
+    a{
+        color: black;
+    }
+    a:hover{
+        color:rgb(158, 34, 158);
+        border-bottom: 2px solid rgb(158, 34, 158);
+    }
     .header_description{
-        top:30vh
+        top:20vh;
     }
     .header_description>h1{
         font-size: 40px;
     }
     .header_description>p{
         font-size: 20px;
-    }
-
-    
+    }  
     .hamburger{
         display: block;
         cursor: pointer;
@@ -239,12 +292,23 @@ footer{
     }
     .liverpool{
         flex-direction: column-reverse;
-        text-align: center;
-        
+        justify-content: center;      
     }
     .liverpool_img>img{
-        width: 80vw;
+        width: 100vw;
         margin-bottom:20px;
+    }
+    .fans{
+        height: fit-content;
+    }
+    .add_btn{
+        display: block;
+        margin-bottom: 20px;
+        border: none;
+    }
+    .add_btn:hover{
+        border: 2px solid black;
+        background: none;
     }
     
     
@@ -300,6 +364,9 @@ footer{
         top:4px;
         left:5px
     }
+    a{
+        color: black;
+    }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -311,6 +378,16 @@ footer{
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    .header_description{
+        top:20vh;
+    }
+    .header_description>h1{
+        font-size: 40px;
+    }
+    .header_description>p{
+        font-size: 20px;
+    }
+
     
     article{
         height:fit-content;
@@ -318,16 +395,28 @@ footer{
     }
     .liverpool{
         flex-direction: column-reverse;  
-        text-align: center;     
+        justify-content: center;    
     }
     
     .liverpool_img>img{
-        width: 80vw;
+        width: 100vw;
         margin-bottom: 20px;
-        margin-left: 20px;      
+             
     }
     .champions{
         max-width: 600px;
+    }
+    .fans{
+        height: fit-content;
+    }
+    .add_btn{
+        display: block;
+        margin-bottom: 20px;
+        border: none;
+    }
+    .add_btn:hover{
+        border: 2px solid black;
+        background: none;
     }
     
     
