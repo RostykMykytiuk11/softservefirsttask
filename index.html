@@ -15,24 +15,31 @@
         <video class="header_bg" autoplay muted loop src="images/bg.mp4"></video>
         <div class="wrapper">
             <nav class="menu">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+    
                 <ul class="menu_list">
-                    <li class="main_item">Main </li>
-                    <li class="matches_item">Matches
-                        <ul class="matches_item_list">
+                    <li class="menu_item">Main </li>
+                    <li id="matches" class="menu_item">Matches
+                        <ul class="menu_item_list">
                             <li>Item1</li>
                             <li>Item2</li>
                             <li>Item3</li>
                         </ul>
                     </li>
-                    <li class="news_item">News </li>
-                    <li class="fans_item">Fans</li>
-                    <li class="contacts_item">Contacts</li>
-                    <li class="admin_item">Admin </li>
+                    <li class="menu_item">News </li>
+                    <li class="menu_item"><a href="#fans">Fans</a></li>
+                    <li class="menu_item">Contacts</li>
+                    <li class="menu_item">Admin </li>
                 </ul>
-                
                 <h1 class="logo">Logo</h1>
                 
+                
             </nav>
+            
             <div class="header_description">
                 <h1>Hello , here we are the best Sport news site</h1>
                 <p>With us You can always get insides, find matches of any sport and to buy an atributes of your favourite team</p>
@@ -42,7 +49,7 @@
     </header>
     <article>
         
-            <div class="biography">
+            <div class="liverpool">
                 <div class="liverpool_img">
                     <img class="liverpool" src="images/liverpool.jpg" alt="liverpool">
                 </div>
@@ -66,17 +73,27 @@
             </div>
         </div>
     </article>
-    <footer>
-        <div class="footer_content">
-            <p> Copyright © 2022 Sport News  </p>
+
+    <section class="fans" id="fans">
+        <coment>
+            <div class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex vel rerum porro cum! Natus, officiis delectus laboriosam consectetur facilis consequuntur nam, repudiandae nemo architecto aperiam necessitatibus totam reprehenderit optio.</div>
+            <div class="coment_date">11.04.2020</div>
+        </coment>
+        <coment>
+            <div class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos aspernatur expedita nemo earum eligendi deserunt reprehenderit corporis fuga provident repellat quibusdam magnam delectus natus numquam aliquid, dolore sunt sed?</div>
+            <div class="coment_date">13.07.2017</div>
+        </coment>
+        <div class="add_coment">
+            <textarea class="com" name="" id="" ></textarea>
+            <button class="add_btn">Add comment</button>
         </div>
-    </footer>
-    
+    </section>
 
-    
+<footer>
+    <div class="footer_content">
+        <p> Copyright © 2022 Sport News  </p>
+    </div>
+</footer>
 <script src="index.js"></script> 
-
-    
-    
 </body>
 </html>
